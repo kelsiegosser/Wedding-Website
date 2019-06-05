@@ -1,2 +1,2 @@
-# Wedding_Website
+# Wedding Website
 Website for Wedding and Reception details
