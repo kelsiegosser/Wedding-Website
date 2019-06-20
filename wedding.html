@@ -31,17 +31,17 @@
           <p>Feel free to match the bride and groom by wearing any variation of the colors below. This is not a requirement but if you can, we would love to have a fun matching pic!</p>
           <div class="row">
             <div class="circle green"></div>
-            <div class="circle yellow"></div>
             <div class="circle orange"></div>
             <div class="circle red"></div>
             <div class="circle pink"></div>
+            <div class="circle purple"></div>
           </div>
           <div class="row">
             <div class="circle lt-green"></div>
-            <div class="circle lt-yellow"></div>
             <div class="circle lt-orange"></div>
             <div class="circle lt-red"></div>
             <div class="circle lt-pink"></div>
+            <div class="circle lt-purple"></div>
           </div>
         </div>
         <div class="column">
@@ -99,15 +99,30 @@
           </p>
           <p>We will be hosting a welcome dinner with drinks on the beach with a bonfire after. Can't wait to see you!</p>
         </div>
-        <div class="column">
+        <div class="column center-vertically">
           <form>
-            <input type="text" name="firstname" value="First Name">
-            <input type="text" name="lastname" value="Last Name">
+            <div class="row">
+              <div class="column left-align">
+                <label>First Name:</label>
+                <input type="text" name="firstname" placeholder="First Name">
+              </div>
+              <div class="column left-align">
+                <label>Last Name:</label>
+                <input type="text" name="lastname" placeholder="Last Name">
+              </div>
+            </div>
             <br>
-            <textarea value="Dietary restrictions"></textarea>
+            <div class="column left-align">
+              <label>Dietary Restrictions:</label>
+              <textarea placeholder="Dietary restrictions"></textarea>
+            </div>
             <br>
-            <button>Will Attend</button>
-            <button>Will Not Attend</button>
+            <div class="row radio-toolbar">
+              <input type="radio" id="radioWelcomeAttendYes" name="welcomeAttendance" value="yes" checked>
+              <label for="radioWelcomeAttendYes"><span>Will Attend</span></label>
+              <input type="radio" id="radioWelcomeAttendNo" name="welcomeAttendance" value="no">
+              <label for="radioWelcomeAttendNo"><span>Will Not Attend</span></label>
+            </div>
           </form>
         </div>
       </div>
@@ -124,17 +139,29 @@
             </p>
             <p>We will be having our ceremony on the beach so please dress accordingly! After the ceremony, we will be providing snacks and then we will be transported to a Catamaran to do an afternoon and sunset trip around the island.</p>
           </div>
-          <div class="column">
+          <div class="column center-vertically">
             <form>
-              <input type="text" name="firstname" value="First Name">
-              <input type="text" name="lastname" value="Last Name">
+              <div class="row">
+                <div class="column left-align">
+                  <label>First Name:</label>
+                  <input type="text" name="firstname" placeholder="First Name">
+                </div>
+                <div class="column left-align">
+                  <label>Last Name:</label>
+                  <input type="text" name="lastname" placeholder="Last Name">
+                </div>
+              </div>
               <br>
-              <button>Will Attend</button>
-              <button>Will Not Attend</button>
+              <div class="row radio-toolbar">
+                <input type="radio" id="radioWedAttendYes" name="weddingAttendance" value="yes" checked>
+                <label for="radioWedAttendYes"><span>Will Attend</span></label>
+                <input type="radio" id="radioWedAttendNo" name="weddingAttendance" value="no">
+                <label for="radioWedAttendNo"><span>Will Not Attend</span></label>
+              </div>
             </form>
           </div>
         </div>
-        <button>Submit RSVP</button>
+        <button><span>Submit RSVP</span></button>
     </div>
     <div class="section lt-green">
         <h1>About Us</h1>
