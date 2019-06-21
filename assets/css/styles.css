@@ -1,0 +1,255 @@
+html {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  width: 100%;
+}
+
+header{
+  margin-top: 4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Vidaloka', serif;
+}
+
+h1, h2 {
+  text-transform: uppercase;  
+}
+
+p {
+  margin: .5em 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-heading {
+  font-size: 48px;
+  font-family: 'Vidaloka', serif;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 2em 3em;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+  padding: 2em;
+}
+
+.center-vertically {
+  justify-content: center;
+}
+
+.left-align {
+  align-items: flex-start;
+}
+
+label {
+  font-weight: bold;
+  font-size: 80%;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+.radio-toolbar {
+  margin: 1em;
+}
+
+.radio-toolbar input[type="radio"] {
+  display:none;
+}
+
+.radio-toolbar label {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin: 1em;
+  align-items: center;
+	justify-content: center;
+  color: rgb(221,37,148);
+  background-image: linear-gradient(to right, rgb(255,73,62) 0%, rgb(221,37,148) 100%);
+  border-radius: 2px;  
+  box-sizing: border-box;  
+  width: 12em;
+  height: 3em;
+  margin: 0 auto;
+  padding: 2px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.radio-toolbar label span {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  background: white;
+	border-radius: 2px;
+	width: 100%;
+	height: 100%;
+	transition: background .5s ease;
+}
+
+.radio-toolbar label:hover span {
+  color: white;
+  background-color: transparent;
+}
+
+.radio-toolbar input[type="radio"]:checked + label span { 
+  background-image: linear-gradient(to right, rgb(255,73,62) 0%, rgb(221,37,148) 100%);
+  color: white;
+}
+
+button {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: 1em;
+  align-items: center;
+	justify-content: center;
+  color: rgb(221,37,148);
+  background-image: linear-gradient(to right, rgb(255,73,62) 0%, rgb(221,37,148) 100%);
+  border-radius: 2px; 
+  border: none; 
+  box-sizing: border-box;  
+  width: 12em;
+  height: 3em;
+  margin: 0 auto;
+  padding: 2px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1px;
+  box-shadow: 1px 2px 6px 2px #ccc;
+}
+
+button span {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  background: white;
+	border-radius: 2px;
+	width: 100%;
+	height: 100%;
+	transition: background .5s ease;
+}
+
+button:hover span {
+  color: white;
+  background-color: transparent;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+}
+
+/************/
+/** Colors **/
+/************/
+
+.green {
+  background-color: rgb(121,157,103);
+}
+
+.orange {
+  background-color: rgb(255,138,33);
+}
+
+.red {
+  background-color: rgb(255,73,62);
+}
+
+.pink {
+  background-color: rgb(255,33,113);
+}
+
+.purple {
+  background-color: rgb(221,37,148);
+}
+
+.lt-green {
+  background-color: rgba(121,157,103,.5);
+}
+
+.lt-orange {
+  background-color: rgba(255,138,33,.5);
+}
+
+.lt-red {
+  background-color: rgba(255,73,62,.5);
+}
+
+.lt-pink {
+  background-color: rgba(255,33,113,.5);
+}
+
+.lt-purple {
+  background-color: rgba(221,37,148,.5);
+}
+
+.section.lt-green {
+  background-color: rgb(228,235,225);
+}
+
+.section.green {
+  background-color: rgb(201,216,194);
+}
+
+.grey {
+  background-color: rgb(137,153,150);
+}
+
+.dk-grey {
+  background-color: rgb(100,112,109);
+}
+
+/************/
+/** Forms ***/
+/************/
+input, textarea {
+  margin: 0 1em 1em 0;
+  padding: .75em .5em;
+  border: 1px solid rgba(221,37,148,.5);
+  color: rgb(137,153,150);
+  font-family: 'Lato', sans-serif;
+}
+
+/************/
+/** Images **/
+/************/
+.ring {
+  width: 10%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+/************/
+/** Design **/
+/************/
+.circle {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
