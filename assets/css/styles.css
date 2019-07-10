@@ -252,4 +252,10 @@ input, textarea {
   height: 25px;
   width: 25px;
   border-radius: 50%;
+.square {
+  height: 25px;
+  width: 25px;
+  margin: .5em;
+}
+
 }
