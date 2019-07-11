@@ -1,3 +1,7 @@
+
+/************/
+/*** Map ****/
+/************/
 function initMap() {
   var myLatlng = {lat: 18.3385, lng: -64.8566};
 
@@ -25,6 +29,7 @@ function initMap() {
     map.setCenter(marker.getPosition());
   });
 }
+
 
 
 /************/
