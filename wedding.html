@@ -1,10 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Kelsie & Rafael Wedding</title>
     <link rel="stylesheet" href="assets\css\styles.css">
-    <link href="assets\js\javascript.js">
     <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Vidaloka&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -206,10 +205,42 @@
     </div>
     <div class="section lt-green">
         <h1>About Us</h1>
-        <!-- Pic Carousel -->
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets\images\ColorPalette.png">
+            <div class="text center-align">Caption Text</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets\images\TheRing.png">
+            <div class="text center-align">Caption Two</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets\images\ColorPalette.png">
+            <div class="text center-align">Caption Three</div>
+          </div>
+          
+          <div class="center-align">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          </div>
+          <br>
+          
+          <div class="center-align">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          
       </div>
   </body>
-
+  <script src="assets\js\javascript.js"></script>
   <!-- Replace the value of the key parameter with your own API key. -->
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8N9zowNE2nW5oAIqYwUEL4FlBVw3PP0w&callback=initMap">
