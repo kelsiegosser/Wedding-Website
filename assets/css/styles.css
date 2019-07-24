@@ -83,6 +83,20 @@ ul {
   font-size: 120%;
 }
 
+ul.no-list-style {
+  list-style: none;
+}
+
+li {
+  padding: 0 .75em;
+}
+
+.nav {
+  text-align: center;
+  width: 100%;
+  font-size: 75%;
+}
+
 .main-heading {
   font-size: 300%;
   font-family: 'Vidaloka', serif;
