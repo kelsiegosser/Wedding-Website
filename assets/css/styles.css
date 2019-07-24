@@ -16,12 +16,23 @@ body {
 @media only screen /* phones increase font size */
   and (max-width: 1080px) {
     body {
-      font-size: 125% !important;
+      font-size: 120% !important;
+    }
+
+    .section {
+      padding: .25em;
     }
 }
 
+@media only screen /* large screens */
+  and (min-width: 1681px) {
+    .section {
+      padding: 2em 8em !important;
+    }
+  }
+
 header{
-  margin: 4em 0 2em 0;
+  padding: 4em 0;
 }
 
 h1 {
@@ -99,6 +110,10 @@ ul {
   flex: 1;
   align-items: center;
   padding: 2em;
+}
+
+.large-text {
+  font-size: 200%;
 }
 
 .center-vertically {
@@ -287,6 +302,22 @@ hr {
   background-color: rgb(100,112,109);
 }
 
+.multi-color-overlay {
+  background: linear-gradient(45deg,
+  rgba(255,138,33,.2),
+  rgba(255,73,62,.2),
+  rgba(255,33,113,.2),
+  rgba(221,37,148,.2)
+    );
+}
+
+.green-yellow-overlay {
+  background: linear-gradient(45deg,
+  rgba(121,157,103,.1),
+  rgba(255,138,33,.1)
+  );
+}
+
 /************/
 /** Forms ***/
 /************/
@@ -302,11 +333,30 @@ input, textarea {
 /************/
 /** Images **/
 /************/
-.ring {
+
+.section-overlay {
+  display: flex;
+  flex-flow: column nowrap;
+  background: rgba(255,255,255,.65);
+  border: 2px solid rgba(255,255,255,.65);
+}
+
+.ring-icon {
   width: 10%;
   height: auto;
   object-fit: scale-down;
 }
+
+/*Photo by Corey Agopian on Unsplash*/
+.palms-clipped { 
+  background: url("../images/corey-agopian-5y4ljzRrDFA-unsplash.jpg") rgb(228,235,225) bottom center;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 
 /************/
 /** Design **/
