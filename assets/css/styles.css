@@ -455,12 +455,6 @@ img {
   border-radius: 0 3px 3px 0;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-/* .prev:hover, .next:hover {
-  color: rgb(255,33,113);
-  transition: color .5s ease;
-} */
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
