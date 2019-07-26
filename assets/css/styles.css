@@ -406,23 +406,26 @@ input, textarea {
 /************/
 
 .mySlides {
-  display: none;
+  overflow: hidden;
+  height: auto;
+  width: auto;
 }
 
 img {
   vertical-align: middle;
-  height: auto;
-  max-height: 100vh;
-  width: auto;
-  max-width: 50%;
-  object-fit: contain;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  width: auto;
+  height: auto;
   position: relative;
   margin: auto;
+  padding: 0 2em;
 }
 
 /* Next & previous buttons */
@@ -433,7 +436,8 @@ img {
   width: auto;
   padding: 1em;
   margin-top: -1.5em;
-  color: white;
+  /* color: white; */
+  color: grey;
   font-weight: bold;
   font-size: 120%;
   transition: 0.6s ease;
@@ -452,34 +456,16 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 100%;
-  padding: .5em 0;
-  position: absolute;
-  bottom: .5em;
-  width: 100%;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 75%;
-  padding: .5em 1em;
-  position: absolute;
-  top: 0;
-}
+/* .prev:hover, .next:hover {
+  color: rgb(255,33,113);
+  transition: color .5s ease;
+} */
 
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 1em;
-  width: 1em;
+  height: .75em;
+  width: .75em;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -488,7 +474,8 @@ img {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: rgb(255,33,113);
+  transition: color .5s ease;
 }
 
 /* Fading animation */
