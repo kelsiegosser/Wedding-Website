@@ -1,6 +1,12 @@
+/* 
+font-family: 'Unica One', cursive; // Headers - small caps
+font-family: 'Great Vibes', cursive; // Heading
+font-family: 'Nunito Sans', sans-serif; // Text - caps
+*/
+
 html {
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 100%;
   scroll-behavior: smooth;
 }
@@ -33,7 +39,15 @@ body {
   }
 
 header{
-  padding: 4em 0;
+  padding: 1em 0;
+  background: #FDFBF9;
+  width: 100% !important;
+}
+
+.header-img {
+  background-image: url('../images/Header.png');
+  height: 80vh;
+  width: 100%;
 }
 
 h1 {
@@ -53,16 +67,13 @@ h4 {
 } 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Vidaloka', serif;
-}
-
-h1, h2 {
+  font-family: 'Unica One', cursive;
   text-transform: uppercase;  
 }
 
 p {
   margin: .5em 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 120%;
   line-height: 1.6;
 }
@@ -111,9 +122,12 @@ nav {
 }
 
 .main-heading {
-  font-size: 300%;
-  font-family: 'Vidaloka', serif;
-  text-transform: uppercase;
+  font-size: 400%;
+  font-family: 'Great Vibes', cursive;
+  text-transform: none;
+  font-weight: 200;
+  padding: 0 3em;
+  color: #CBA84D;
 }
 
 .section {
@@ -354,7 +368,7 @@ input, textarea {
   padding: .75em .5em;
   border: 1px solid rgba(221,37,148,.5);
   color: rgb(137,153,150);
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /************/
@@ -389,16 +403,44 @@ input, textarea {
 /** Design **/
 /************/
 .circle {
-  height: 25px;
-  width: 25px;
   border-radius: 50%;
   margin: .5em;
+}
+
+.circle.large {
+  height: 200px;
+  width: 200px;
 }
 
 .square {
   height: 25px;
   width: 25px;
   margin: .5em;
+}
+
+.circle-background {
+  display: block;
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  align-items: center;
+	justify-content: center;
+  color: rgb(221,37,148);
+  background-image: linear-gradient(to right bottom, rgb(255,138,33) 0%, rgb(255,73,62) 33%, rgb(255,33,113) 67%, rgb(221,37,148) 100%);
+  border: none; 
+  box-sizing: border-box;  
+  margin: 0 auto;
+  box-shadow: 1px 2px 6px 2px #ccc;
+}
+
+.circle-background span {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  background: white;
+	border-radius: 50%;
+	width: 95%;
+	height: 95%;
 }
 
 /************/
