@@ -14,7 +14,7 @@ html {
 body {
   display: flex;
   flex-flow: column nowrap;
-  text-align: center;
+  text-align: left;
   width: 100%;
   margin: 0;
   font-size: 16px;
@@ -34,7 +34,7 @@ body {
 @media only screen /* large screens */
   and (min-width: 1681px) {
     .section {
-      padding: 2em 8em !important;
+      padding: 4em !important;
     }
   }
 
@@ -42,20 +42,26 @@ header{
   padding: 1em 0;
   background: #FDFBF9;
   width: 100% !important;
-}
-
-.header-img {
-  background-image: url('../images/Header.png');
-  height: 80vh;
-  width: 100%;
+  /* box-shadow: 0px 0px 6px 1px #aaa; */
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 175%;
+  text-align: center;
+  background: linear-gradient(45deg, #FF493E, #DD2594);
+  line-height: 2px;
+}
+
+h1 span {
+  background: white;
+  padding: 0 1em;
 }
 
 h2 {
-  font-size: 175%;
+  font-size: 200%;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase; 
+  font-weight: lighter; 
 }
 
 h3 {
@@ -66,9 +72,10 @@ h4 {
   font-size: 125%;
 } 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: 'Unica One', cursive;
-  text-transform: uppercase;  
+  text-transform: uppercase; 
+  font-weight: lighter; 
 }
 
 p {
@@ -76,6 +83,7 @@ p {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 120%;
   line-height: 1.6;
+  text-align: center;
 }
 
 a {
@@ -103,7 +111,7 @@ li {
   padding: 0 .75em;
 }
 
-nav {
+/* nav {
   display: flex;
   flex-flow: row wrap;
   text-align: center;
@@ -119,6 +127,37 @@ nav {
   text-align: center;
   width: 100%;
   font-size: 75%;
+} */
+
+@media (min-height: 300px) {
+  nav {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    padding: 1em;
+    box-shadow: 2px 4px 4px 0px #ddd;
+    border: 1px solid lightgray;
+    z-index: 0;
+  }
+
+  nav ul {
+    align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: darkorchid;
+  }
+
+  nav ul li a:hover {
+    color: rgb(255,138,33);
+  }
 }
 
 .main-heading {
@@ -128,20 +167,24 @@ nav {
   font-weight: 200;
   padding: 0 3em;
   color: #CBA84D;
+  margin: 0;
 }
 
 .section {
-  padding: 2em 3em;
+  margin: 2em;
+  margin-left: 250px;
   display: flex;
   flex-flow: column nowrap;
+  width: 60%;
+  align-self: center;
 }
 
 .row {
   display: flex;
   flex-flow: row wrap;
-  width: 80%;
+  width: 100%;
   justify-content: center;
-  align-self: center;
+  margin: 0;
 }
 
 .column {
@@ -150,7 +193,21 @@ nav {
   flex-basis: 100%;
   flex: 1;
   align-items: center;
+  justify-content: center;
   padding: 2em;
+  margin: 2em;
+}
+
+.column img {
+  height: 100px;
+  width: 100px;
+}
+
+.hr-minor {
+  background: linear-gradient(45deg, #FF8A21, #FF2171, #FF8A21);
+  height: 1px;
+  width: 75%;
+  align-self: center;
 }
 
 .large-text {
