@@ -58,13 +58,6 @@ header p {
 h1 {
   font-size: 175%;
   text-align: center;
-  background: linear-gradient(45deg, #FF493E, #DD2594);
-  line-height: 2px;
-}
-
-h1 span {
-  background: white;
-  padding: 0 1em;
 }
 
 h2 {
@@ -177,6 +170,10 @@ li {
   width: 100%;
   justify-content: center;
   margin: 0;
+}
+
+.row.nowrap {
+  flex-wrap: nowrap;
 }
 
 .column {
@@ -318,6 +315,21 @@ button:hover span {
   background-color: transparent;
 }
 
+.button {
+  background: #D83A76;
+  color: white;
+  text-transform: uppercase;
+  padding: .5em 2em;
+  border-radius: 4px;
+  margin: 1em;
+}
+
+.button:hover {
+  transition: background .5s ease;
+  background: #FF2171;
+  color: white;
+}
+
 hr {
   width: 70%;
   border: none;
@@ -434,6 +446,18 @@ input, textarea {
   max-height: 150px;
   max-width: 150px;
   object-fit: contain;
+}
+
+.heading-garland {
+  max-height: 100px;
+}
+
+.heading-garland.mirror {
+  transform: scaleX(-1);
+}
+
+.heading-garland.rotate {
+  transform: rotate(180deg);
 }
 
 .section-overlay {
