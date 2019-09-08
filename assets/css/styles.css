@@ -17,7 +17,7 @@ body {
   text-align: left;
   width: 100%;
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media only screen /* phones increase font size */
@@ -27,16 +27,9 @@ body {
     }
 
     .section {
-      padding: .25em;
+      padding: .5em;
     }
 }
-
-@media only screen /* large screens */
-  and (min-width: 1681px) {
-    .section {
-      padding: 4em !important;
-    }
-  }
 
 header{
   padding: 1em 0;
@@ -44,9 +37,7 @@ header{
   background-size: cover;
   background-position: top;
   background-position-x: center;
-  margin-left: 250px !important;
-  width: auto !important;
-  height: 80vh;
+  height: 75vh;
   text-align: center;
 }
 
@@ -122,9 +113,8 @@ li {
     top: 0;
     height: 100vh;
     width: 250px;
-    padding: 0 1em;
-    box-shadow: 2px 4px 4px 0px #aaa;
-    border: 1px solid lightgray;
+    padding: 0;
+    box-shadow: 2px 4px 4px 0px rgba(10,10,10,.1);
     z-index: 0;
     background: white;
     display: flex;
@@ -132,21 +122,26 @@ li {
   }
 
   nav ul {
-    padding: 1.5em;
+    padding: 1.5em 0 0 0;
     margin: 0;
   }
 
   nav ul li {
-    padding: 0;
+    padding: .25em 0;
   }
   
   nav ul li a {
     color: rgb(255,33,113);
+    padding-left: 1.5em;
   }
 
   nav ul li a:hover {
     color: rgb(255,138,33);
   }
+}
+
+.active-nav {
+  background: rgba(255,33,113,.1);
 }
 
 .header-image {
@@ -157,11 +152,11 @@ li {
 }
 
 .section {
-  margin: 2em;
+  padding: 4em;
   margin-left: 250px;
   display: flex;
   flex-flow: column nowrap;
-  width: 60%;
+  width: calc(100vw - 250px - 10em);
   align-self: center;
 }
 
@@ -198,6 +193,11 @@ img.wedding-party  {
   max-height: 250px;
   max-width: 250px;
   object-fit: contain;
+}
+
+#home {
+  padding: 0;
+  width: calc(100vw - 280px);
 }
 
 .hr-minor {
@@ -466,13 +466,6 @@ input, textarea {
 
 .heading-garland.rotate {
   transform: rotate(180deg);
-}
-
-.section-overlay {
-  display: flex;
-  flex-flow: column nowrap;
-  background: rgba(255,255,255,.65);
-  border: 2px solid rgba(255,255,255,.65);
 }
 
 .ring-icon {
