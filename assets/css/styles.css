@@ -259,6 +259,10 @@ img.wedding-party  {
   align-self: center;
 }
 
+.top-align {
+  align-items: flex-start;
+}
+
 label {
   font-weight: bold;
   font-size: 100%;
@@ -439,6 +443,16 @@ input, textarea {
   height: auto;
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+img.circle-image {
+  vertical-align: middle;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 
