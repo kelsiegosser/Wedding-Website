@@ -119,6 +119,9 @@ li {
     background: white;
     display: flex;
     flex-flow: column nowrap;
+    font-family: 'Unica One', cursive;
+    text-transform: uppercase;
+    font-size: 120%;
   }
 
   nav ul {
@@ -127,21 +130,24 @@ li {
   }
 
   nav ul li {
-    padding: .25em 0;
+    padding: 0;
   }
   
   nav ul li a {
-    color: rgb(255,33,113);
-    padding-left: 1.5em;
+    color: rgb(202,133,158);
+    padding-left: 1.5rem;
+    line-height: 32px;
   }
 
   nav ul li a:hover {
-    color: rgb(255,138,33);
+    color: rgb(255,33,113);
   }
 }
 
 .active-nav {
-  background: rgba(255,33,113,.1);
+  color: rgb(255,33,113);
+  font-size: larger;
+  line-height: 32px;
 }
 
 .header-image {
