@@ -4,6 +4,16 @@ font-family: 'Great Vibes', cursive; // Heading
 font-family: 'Nunito Sans', sans-serif; // Text - caps
 */
 
+/* 
+green   rgb(121,157,103);
+orange  rgb(255,138,33);
+red     rgb(255,73,62);
+pink    rgb(255,33,113);
+purple  rgb(221,37,148); 
+*/
+
+
+
 html {
   width: 100%;
   font-family: 'Nunito Sans', sans-serif;
@@ -47,8 +57,8 @@ header p {
 }
 
 h1 {
-  font-size: 175%;
-  text-align: center;
+  font-size: 250%;
+  align-self: center;
 }
 
 h2 {
@@ -164,6 +174,22 @@ li {
   flex-flow: column nowrap;
   width: calc(100vw - 250px - 10em);
   align-self: center;
+}
+
+.pink-background {
+  background: rgba(255, 33, 113, .12);
+}
+
+.red-background {
+  background: rgba(255, 73, 62, .12);
+}
+
+.orange-background {
+  background: rgba(255, 138, 33, .12);
+}
+
+.purple-background {
+  background: rgba(221, 37, 148, .12);
 }
 
 .row {
@@ -358,81 +384,6 @@ hr {
   background-color: grey;
 }
 
-/************/
-/** Colors **/
-/************/
-
-.green {
-  background-color: rgb(121,157,103);
-}
-
-.orange {
-  background-color: rgb(255,138,33);
-}
-
-.red {
-  background-color: rgb(255,73,62);
-}
-
-.pink {
-  background-color: rgb(255,33,113);
-}
-
-.purple {
-  background-color: rgb(221,37,148);
-}
-
-.lt-green {
-  background-color: rgba(121,157,103,.5);
-}
-
-.lt-orange {
-  background-color: rgba(255,138,33,.5);
-}
-
-.lt-red {
-  background-color: rgba(255,73,62,.5);
-}
-
-.lt-pink {
-  background-color: rgba(255,33,113,.5);
-}
-
-.lt-purple {
-  background-color: rgba(221,37,148,.5);
-}
-
-.section.lt-green {
-  background-color: rgb(228,235,225);
-}
-
-.section.green {
-  background-color: rgb(201,216,194);
-}
-
-.grey {
-  background-color: rgb(137,153,150);
-}
-
-.dk-grey {
-  background-color: rgb(100,112,109);
-}
-
-.multi-color-overlay {
-  background: linear-gradient(45deg,
-  rgba(255,138,33,.2),
-  rgba(255,73,62,.2),
-  rgba(255,33,113,.2),
-  rgba(221,37,148,.2)
-    );
-}
-
-.green-yellow-overlay {
-  background: linear-gradient(45deg,
-  rgba(121,157,103,.1),
-  rgba(255,138,33,.1)
-  );
-}
 
 /************/
 /** Forms ***/
