@@ -93,14 +93,14 @@ p {
 }
 
 a {
-  color: rgba(255,33,113,.75);
+  color: #b93c50;
   text-decoration: none;
   font-size: 100%;
   line-height: 1.6;
 }
 
 a:hover {
-  color: rgb(255,33,113);
+  color: #ff493e;
   transition: color .5s ease;
 }
 
@@ -144,18 +144,18 @@ li {
   }
   
   nav ul li a {
-    color: rgb(202,133,158);
+    color: #b93c50;
     padding-left: 1.5rem;
     line-height: 32px;
   }
 
   nav ul li a:hover {
-    color: rgb(255,33,113);
+    color: #ff493e;
   }
 }
 
 .active-nav {
-  color: rgb(255,33,113);
+  color: #ff493e;
   font-size: larger;
   line-height: 32px;
 }
@@ -176,7 +176,7 @@ li {
   align-self: center;
 }
 
-.pink-background {
+/* .pink-background {
   background: rgba(255, 33, 113, .12);
 }
 
@@ -190,6 +190,16 @@ li {
 
 .purple-background {
   background: rgba(221, 37, 148, .12);
+} */
+
+.dark-background {
+  background: #252330;
+  color: #f5f9f8;
+}
+
+.light-background {
+  background: #f5f9f8;
+  color: #252330;
 }
 
 .row {
