@@ -268,10 +268,6 @@ label {
   font-size: 100%;
 }
 
-input, textarea {
-  width: 100%;
-}
-
 .radio-toolbar {
   margin: 1em;
 }
@@ -293,7 +289,6 @@ input, textarea {
   box-sizing: border-box;  
   width: 12em;
   height: 3em;
-  margin: 0 auto;
   padding: 2px;
   text-transform: uppercase;
   font-weight: normal;
@@ -399,6 +394,15 @@ input, textarea {
   border: 1px solid rgba(221,37,148,.5);
   color: rgb(137,153,150);
   font-family: 'Nunito Sans', sans-serif;
+}
+
+input {
+  max-width: 400px;
+}
+
+textarea {
+  max-width: 400px;
+  min-height: 150px;
 }
 
 /************/
