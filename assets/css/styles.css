@@ -235,10 +235,12 @@ nav ul li a:hover {
   .section {
     margin: 0 !important;
     padding: 1em !important;
-    width: 100% !important;
+    width: auto !important;
     font-size: 125% !important;
     align-self: auto !important;
+    padding-top: 8vh !important;
   }
+
   #navBar {
     overflow: hidden;
     height: 8vh;
@@ -257,7 +259,7 @@ nav ul li a:hover {
 
   .hamburger-icon-container {
     position: fixed;
-    width: 100%;
+    width: auto;
     height: auto;
   }
 
@@ -270,16 +272,13 @@ nav ul li a:hover {
   }
 
   nav ul {
-    margin-top: 4vh;
+    margin-top: 6vh;
   }
 
   header {
-    margin-top: 2vh !important;
+    margin-top: 8vh !important;
     height: 25vh;
-  }
-
-  .section {
-    padding-top: 8vh !important;
+    width: 100% !important;
   }
 
   .column {
@@ -295,8 +294,8 @@ nav ul li a:hover {
   }
 
   img.slides {
-    height: 100px !important;
-    width: 100px !important;
+    height: 200px !important;
+    width: 200px !important;
   }
 
   blockquote {
@@ -538,7 +537,6 @@ img.wedding-party {
 .heading-garland.rotate {
   transform: rotate(180deg);
 }
-
 
 /************/
 /* Carousel */
