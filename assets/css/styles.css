@@ -27,7 +27,7 @@ body {
   text-align: left;
   width: 100%;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media only screen /* phones increase font size */
@@ -57,24 +57,26 @@ header p {
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 200%;
   align-self: center;
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 150%;
   font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase; 
   font-weight: lighter; 
   text-align: center;
+  margin: 1rem 0 0 0;
 }
 
 h3 {
-  font-size: 150%;
+  font-size: 130%;
+  margin: .5rem 0;
 }
 
 h4 {
-  font-size: 125%;
+  font-size: 120%;
 } 
 
 h1, h3, h4, h5, h6 {
@@ -87,20 +89,20 @@ h1, h3, h4, h5, h6 {
 p {
   margin: .5em 0;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 120%;
+  font-size: 100%;
   line-height: 1.6;
   text-align: center;
 }
 
 a {
-  color: #b93c50;
+  color: #ff493e;
   text-decoration: none;
   font-size: 100%;
   line-height: 1.6;
 }
 
 a:hover {
-  color: #ff493e;
+  color: #e6170d;
   transition: color .5s ease;
 }
 
@@ -115,6 +117,38 @@ ul.no-list-style {
 
 li {
   padding: 0 .75em;
+}
+
+.quotation{
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+.quotation:before {
+  content: open-quote;
+  display: inline;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 15px;
+  color: rgb(221,37,148);
+  font-size: 3em;
+}
+.quotation::after {
+  content: close-quote;
+  display: inline;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 20px;
+  color: rgb(221,37,148);
+  font-size: 3em;
+}
+footer{
+  margin:0;
+  text-align: center;
+  font-style: italic;
 }
 
 @media (min-width: 1080px) {
@@ -144,13 +178,13 @@ li {
   }
   
   nav ul li a {
-    color: #b93c50;
+    color: #b19a99;
     padding-left: 1.5rem;
     line-height: 32px;
   }
 
   nav ul li a:hover {
-    color: #ff493e;
+    color: #aa322c;
   }
 }
 
@@ -176,25 +210,57 @@ li {
   align-self: center;
 }
 
-/* .pink-background {
-  background: rgba(255, 33, 113, .12);
-}
-
-.red-background {
-  background: rgba(255, 73, 62, .12);
+.orange-background, 
+.red-background,
+.pink-background,
+.purple-background,
+.orange-outline,
+.red-outline,
+.pink-outline,
+.purple-outline {
+  border-radius: 4px;
 }
 
 .orange-background {
-  background: rgba(255, 138, 33, .12);
+  background: #FFA14D;
+  color: #f5f9f8;
+}
+
+.red-background {
+  background: #FF6D65;
+  color: #f5f9f8;
+}
+
+.pink-background {
+  background:#FF4486;
+  color: #f5f9f8;
 }
 
 .purple-background {
-  background: rgba(221, 37, 148, .12);
-} */
-
-.dark-background {
-  background: #252330;
+  background: #DD2594;
   color: #f5f9f8;
+} 
+
+.orange-background {
+  background: #FFA14D;
+  color: #f5f9f8;
+}
+
+.red-outline {
+  border: 2px solid #FF6D65;
+  border-radius: 4px;
+}
+
+.pink-outline {
+  border: 2px solid #FF4486;
+}
+
+.purple-outline {
+  border: 2px solid #DD2594;
+} 
+
+.orange-outline {
+  border: 2px solid #FFA14D;
 }
 
 .light-background {
@@ -221,8 +287,8 @@ li {
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 2em;
   margin: 2em;
+  padding: 0 1em;
 }
 
 .column img {
@@ -250,7 +316,8 @@ img.wedding-party  {
 }
 
 .large-text {
-  font-size: 200%;
+  font-size: 500%;
+  padding: 2rem 0 0 0;
 }
 
 .center-vertically {
@@ -262,6 +329,11 @@ img.wedding-party  {
   text-align: left;
   align-self: flex-start;
 }
+
+.align-text-justify {
+  text-align: justify;
+}
+
 
 .center-align {
   align-items: center;
@@ -366,7 +438,7 @@ button:hover span {
 
 .button {
   background: #D83A76;
-  color: white;
+  color: #f5f9f8;
   text-transform: uppercase;
   padding: .5em 2em;
   border-radius: 4px;
@@ -376,7 +448,44 @@ button:hover span {
 .button:hover {
   transition: background .5s ease;
   background: #FF2171;
-  color: white;
+  color: #f5f9f8;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.button.orange {
+  background: #f5f9f8;
+  color: #ff8a21;
+  font-weight: bold;
+}
+
+.button.orange:hover {
+  transition: background .5s ease;
+  color: #ec6e00;
+  box-shadow: 0 2px 2px 0 rgba(236, 110, 0, 0.2), 0 3px 1px -2px rgba(236, 110, 0, 0.2), 0 1px 5px 0 rgba(236, 110, 0, 0.2);
+}
+
+.button.red {
+  background: #f5f9f8;
+  color: #ff493e;
+  font-weight: bold;
+}
+
+.button.red:hover {
+  transition: background .5s ease;
+  color: #e6170d;
+  box-shadow: 0 2px 2px 0 rgba(230, 23, 13, 0.2), 0 3px 1px -2px rgba(230, 23, 13, 0.2), 0 1px 5px 0 rgba(230, 23, 13, 0.2);
+}
+
+.button.pink {
+  background: #f5f9f8;
+  color: #ff2171;
+  font-weight: bold;
+}
+
+.button.pink:hover {
+  transition: background .5s ease;
+  color: #d8004f;
+  box-shadow: 0 2px 2px 0 rgba(216, 0, 79, 0.2), 0 3px 1px -2px rgba(216, 0, 79, 0.2), 0 1px 5px 0 rgba(216, 0, 79, 0.2);
 }
 
 hr {
@@ -426,8 +535,8 @@ textarea {
 }
 
 .icon {
-  max-height: 150px;
-  max-width: 150px;
+  max-height: 75px;
+  max-width: 75px;
   object-fit: contain;
 }
 
@@ -473,12 +582,21 @@ img.circle-image {
 /************/
 /** Design **/
 /************/
+
+.inverted-card {
+  border-radius: 6px;
+  background: #B93C50;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem 4rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
 .circle {
   border-radius: 50%;
   margin: .5em;
-}
-
-.circle.large {
+  border: 2px solid #ff493e;
   height: 200px;
   width: 200px;
 }
@@ -489,30 +607,6 @@ img.circle-image {
   margin: .5em;
 }
 
-.circle-background {
-  display: block;
-  position: relative;
-  z-index: 2;
-  border-radius: 50%;
-  align-items: center;
-	justify-content: center;
-  color: rgb(221,37,148);
-  background-image: linear-gradient(to right bottom, rgb(255,138,33) 0%, rgb(255,73,62) 33%, rgb(255,33,113) 67%, rgb(221,37,148) 100%);
-  border: none; 
-  box-sizing: border-box;  
-  margin: 0 auto;
-  box-shadow: 1px 2px 6px 2px #ccc;
-}
-
-.circle-background span {
-  display: flex;
-  align-items: center;
-	justify-content: center;
-  background: white;
-	border-radius: 50%;
-	width: 95%;
-	height: 95%;
-}
 
 /************/
 /* Carousel */
