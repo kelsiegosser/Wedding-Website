@@ -19,6 +19,17 @@ $(window).on('scroll', function() {
   });
 });
 
+let navBar = document.getElementById("navBar");
+// let hamburgerIcon = document.getElementById("hamburger-icon");
+function openCloseNav() {
+	if (navBar.style.height === "100vh") {
+		navBar.style.height = "8vh";
+		// hamburgerIcon.style.height = "250px";
+	} else {
+		navBar.style.height = "100vh";
+		// hamburgerIcon.style.height = "8vh";
+	}
+}
 
 
 /************/
