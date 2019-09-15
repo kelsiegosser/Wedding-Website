@@ -95,14 +95,15 @@ p {
 }
 
 a {
-  color: #ff493e;
+  color: #ff2171;
   text-decoration: none;
   font-size: 100%;
   line-height: 1.6;
+  font-weight: bold;
 }
 
 a:hover {
-  color: #e6170d;
+  color: #d8004f;
   transition: color .5s ease;
 }
 
@@ -181,15 +182,16 @@ footer{
     color: #b19a99;
     padding-left: 1.5rem;
     line-height: 32px;
+    font-weight: normal;
   }
 
   nav ul li a:hover {
-    color: #aa322c;
+    color: #d8004f;
   }
 }
 
 .active-nav {
-  color: #ff493e;
+  color: #ff2171;
   font-size: larger;
   line-height: 32px;
 }
