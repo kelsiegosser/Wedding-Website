@@ -248,7 +248,7 @@ nav ul li a:hover {
     position: fixed;
     top: 0;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.96);
     border-bottom: 1px solid lightgray;
   }
 
@@ -263,12 +263,34 @@ nav ul li a:hover {
     height: auto;
   }
 
-  #hamburger-icon {
-    color: #ff2171;
-    font-size: 150%;
+  .hamburger {
     cursor: pointer;
     padding: 0.5rem 1rem;
-    transition: 0.5s;
+    width: 36px;
+  }
+
+  .hamburger:after, 
+  .hamburger:before, 
+  .hamburger div {
+    background-color: #ff2171;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    height: 4px;
+    margin: 8px 0;
+    transition: all .2s ease-in-out;
+  }
+
+  .hamburger-x:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  
+  .hamburger-x:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  
+  .hamburger-x div {
+    transform: scale(0);
   }
 
   nav ul {

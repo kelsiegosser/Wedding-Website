@@ -22,11 +22,18 @@ $(window).on('scroll', function() {
 });
 
 let navBar = document.getElementById('navBar');
+let hamburger = document.getElementById('hamburger-icon');
 function openCloseNav() {
   if (navBar.style.height === '100vh') {
     navBar.style.height = '8vh';
+    hamburger.classList.remove("hamburger-x");
   } else {
     navBar.style.height = '100vh';
+    hamburger.classList.add("hamburger-x");
+  }
+
+  function newFunction() {
+    hamburger.style.color = blue;
   }
 }
 
