@@ -66,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Unica One', cursive;
+  font-family: 'Unica One', cursive, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
   text-align: center;
@@ -85,7 +85,7 @@ a {
   text-decoration: none;
   font-size: 100%;
   line-height: 1.6;
-  font-weight: bold;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -149,7 +149,7 @@ nav {
   background: white;
   display: flex;
   flex-flow: column nowrap;
-  font-family: 'Unica One', cursive;
+  font-family: 'Unica One', cursive, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 120%;
 }
@@ -168,6 +168,7 @@ nav ul li a {
   padding-left: 1.5rem;
   line-height: 32px;
   font-weight: normal;
+  text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -187,6 +188,10 @@ nav ul li a:hover {
 
 /*laptops*/
 @media only screen and (min-width: 414px) and (max-width: 1280px) {
+  body {
+    font-size: 75%;
+  }
+
   nav {
     width: 200px;
   }
@@ -659,4 +664,39 @@ img.slides {
   to {
     opacity: 1;
   }
+}
+
+footer, .footer-credit {
+  background: #f5f9f8;
+  padding: 2em;
+  margin-left: 250px;
+  text-align: center;
+}
+
+footer {
+  background: #ff4486;
+  color: white;
+}
+
+footer a {
+  color: #dfece9;
+}
+
+.fab, .fas {
+  padding: .5em;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer p, .footer-credit p {
+  font-size: 80%;
+  font-style: normal;
+}
+
+.footer-credit img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain !important;
 }
