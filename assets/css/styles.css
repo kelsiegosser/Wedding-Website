@@ -132,7 +132,7 @@ li {
   color: rgb(221, 37, 148);
   font-size: 3em;
 }
-footer {
+blockquote div.footer {
   margin: 0;
   text-align: center;
   font-style: italic;
@@ -274,8 +274,8 @@ nav ul li a:hover {
     width: 36px;
   }
 
-  .hamburger:after, 
-  .hamburger:before, 
+  .hamburger:after,
+  .hamburger:before,
   .hamburger div {
     background-color: #ff2171;
     border-radius: 2px;
@@ -283,17 +283,17 @@ nav ul li a:hover {
     display: block;
     height: 4px;
     margin: 8px 0;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .hamburger-x:before {
     transform: translateY(12px) rotate(135deg);
   }
-  
+
   .hamburger-x:after {
     transform: translateY(-12px) rotate(-135deg);
   }
-  
+
   .hamburger-x div {
     transform: scale(0);
   }
@@ -666,7 +666,8 @@ img.slides {
   }
 }
 
-footer, .footer-credit {
+footer,
+.footer-credit {
   background: #f5f9f8;
   padding: 2em;
   margin-left: 250px;
@@ -682,15 +683,17 @@ footer a {
   color: #dfece9;
 }
 
-.fab, .fas {
-  padding: .5em;
+.fab,
+.fas {
+  padding: 0.5em;
 }
 
 footer a:hover {
   color: white;
 }
 
-footer p, .footer-credit p {
+footer p,
+.footer-credit p {
   font-size: 80%;
   font-style: normal;
 }
