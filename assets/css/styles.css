@@ -189,7 +189,7 @@ nav ul li a:hover {
 /*laptops*/
 @media only screen and (min-width: 414px) and (max-width: 1280px) {
   body {
-    font-size: 75%;
+    font-size: 90%;
   }
 
   nav {
@@ -227,6 +227,14 @@ nav ul li a:hover {
   img.wedding-party {
     height: 200px !important;
     width: 200px !important;
+  }
+
+  footer, .footer-credit {
+    margin-left: 200px !important;
+  }
+
+  footer p, .footer-credit p {
+    font-size: 100% !important;
   }
 }
 
@@ -327,6 +335,10 @@ nav ul li a:hover {
 
   blockquote {
     margin: 0;
+  }
+
+  footer, .footer-credit {
+    margin: 0 !important;
   }
 }
 
