@@ -33,11 +33,6 @@ function openCloseNav() {
   }
 }
 
-$(document).ready(function () {
-  $('nav ul a').click(function(event) {
-    openCloseNav();
-  });
-});
 
 /************/
 /* Carousel */
