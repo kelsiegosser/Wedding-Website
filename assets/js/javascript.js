@@ -32,10 +32,6 @@ function openCloseNav() {
     hamburger.classList.add("hamburger-x");
   }
 
-  function newFunction() {
-    hamburger.style.color = blue;
-  }
-}
 
 /************/
 /* Carousel */
