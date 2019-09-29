@@ -4,19 +4,19 @@
 
 const offset = 15;
 
-$('nav ul li a').on('click', function(event) {
+$('nav ul a').on('click', function(event) {
   $(this)
-    .find('a').parent()
+    // .find('a')
     .removeClass('active-nav');
-  $(this).parent().addClass('active-nav');
+  $(this).addClass('active-nav');
 });
 
 $(window).on('scroll', function() {
   $('.section').each(function() {
     if ($(window).scrollTop() + offset >= $(this).offset().top) {
       var id = $(this).attr('id');
-      $('nav ul li a').parent().removeClass('active-nav');
-      $('nav ul li a[href=\\#' + id + ']').parent().addClass('active-nav');
+      $('nav ul a').removeClass('active-nav');
+      $('nav ul a[href=\\#' + id + ']').addClass('active-nav');
     }
   });
 });
