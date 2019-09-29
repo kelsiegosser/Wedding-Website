@@ -215,6 +215,10 @@ iframe {
     font-size: 90%;
   }
 
+  h1.header-background {
+    font-size: 900%;
+  }
+
   nav {
     width: 200px;
   }
