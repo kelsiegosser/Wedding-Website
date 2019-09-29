@@ -6,7 +6,6 @@ const offset = 15;
 
 $('nav ul a').on('click', function(event) {
   $(this)
-    // .find('a')
     .removeClass('active-nav');
   $(this).addClass('active-nav');
 });
@@ -21,6 +20,7 @@ $(window).on('scroll', function() {
   });
 });
 
+
 let navBar = document.getElementById('navBar');
 let hamburger = document.getElementById('hamburger-icon');
 function openCloseNav() {
@@ -31,11 +31,13 @@ function openCloseNav() {
     navBar.style.height = '100vh';
     hamburger.classList.add("hamburger-x");
   }
-
-  function newFunction() {
-    hamburger.style.color = blue;
-  }
 }
+
+$(document).ready(function () {
+  $('nav ul a').click(function(event) {
+    openCloseNav();
+  });
+});
 
 /************/
 /* Carousel */
