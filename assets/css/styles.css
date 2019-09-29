@@ -256,7 +256,7 @@ nav ul a:hover, nav ul a li:hover {
   .section {
     margin: 0 !important;
     padding: 1em !important;
-    width: 100vw !important;
+    width: auto !important;
     font-size: 110% !important;
     align-self: auto !important;
     padding-top: 8vh !important;
@@ -332,7 +332,7 @@ nav ul a:hover, nav ul a li:hover {
   }
 
   .heading-garland {
-    max-width: 25%;
+    max-width: 20%;
     height: auto;
     object-fit: contain;
   }
@@ -606,7 +606,6 @@ img.slides {
   height: auto;
   position: relative;
   margin: auto;
-  padding: 0 2em;
 }
 
 /* Next & previous buttons */
@@ -616,7 +615,7 @@ img.slides {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 1em;
+  padding: .5em;
   margin-top: -1.5em;
   font-weight: bold;
   font-size: 120%;
