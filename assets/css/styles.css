@@ -146,12 +146,10 @@ nav {
   padding: 0;
   box-shadow: 2px 4px 4px 0px rgba(10, 10, 10, 0.1);
   z-index: 0;
-  background: white;
+  background: #ff2171;
   display: flex;
   flex-flow: column nowrap;
-  font-family: 'Unica One', cursive, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 120%;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 nav ul {
@@ -160,19 +158,31 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0;
+  padding: .2em 0;
+  margin: .2em .5em;
+  border-radius: 4px;
 }
 
 nav ul li a {
-  color: #b19a99;
+  color: #f5f9f8;
   padding-left: 1.5rem;
-  line-height: 32px;
-  font-weight: normal;
   text-decoration: none;
+  font-size: 80%;
 }
 
-nav ul li a:hover {
-  color: #d8004f;
+nav ul li:hover, nav ul li a:hover {
+  background: #FF4486;
+  color: white;
+}
+
+
+.active-nav {
+  background: white;
+  border-radius: 4px;
+}
+
+.active-nav a {
+  color: #ff2171; 
 }
 
 #navbar {
@@ -201,7 +211,7 @@ nav ul li a:hover {
   }
 
   .nav-image {
-    max-height: 100px !important;
+    max-width: 200px !important;
     align-self: flex-start !important;
   }
 
@@ -248,10 +258,11 @@ nav ul li a:hover {
   .section {
     margin: 0 !important;
     padding: 1em !important;
-    width: auto !important;
-    font-size: 125% !important;
+    width: 100vw !important;
+    font-size: 110% !important;
     align-self: auto !important;
     padding-top: 8vh !important;
+    text-overflow: ellipsis;
   }
 
   #navBar {
@@ -261,8 +272,8 @@ nav ul li a:hover {
     position: fixed;
     top: 0;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.96);
-    border-bottom: 1px solid lightgray;
+    /* background: rgba(255, 255, 255, 0.96); */
+    /* border-bottom: 1px solid lightgray; */
   }
 
   .nav-image {
@@ -285,21 +296,21 @@ nav ul li a:hover {
   .hamburger:after,
   .hamburger:before,
   .hamburger div {
-    background-color: #ff2171;
+    background-color: #f5f9f8;
     border-radius: 2px;
     content: '';
     display: block;
-    height: 4px;
+    height: 3px;
     margin: 8px 0;
     transition: all 0.2s ease-in-out;
   }
 
   .hamburger-x:before {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(11px) rotate(135deg);
   }
 
   .hamburger-x:after {
-    transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-11px) rotate(-135deg);
   }
 
   .hamburger-x div {
@@ -307,7 +318,7 @@ nav ul li a:hover {
   }
 
   nav ul {
-    margin-top: 6vh;
+    margin-top: 7vh;
   }
 
   header {
@@ -340,12 +351,6 @@ nav ul li a:hover {
   footer, .footer-credit {
     margin: 0 !important;
   }
-}
-
-.active-nav {
-  color: #ff2171;
-  font-size: larger;
-  line-height: 32px;
 }
 
 .header-image {
@@ -496,6 +501,7 @@ img.wedding-party {
 .button {
   background: #d83a76;
   color: #f5f9f8;
+  text-decoration: none;
   text-transform: uppercase;
   padding: 0.5em 2em;
   border-radius: 4px;
@@ -554,7 +560,7 @@ img.wedding-party {
 /************/
 
 .nav-image {
-  max-height: 200px;
+  max-width: 250px;
   object-fit: contain;
   align-self: center;
 }
@@ -589,7 +595,6 @@ img.wedding-party {
 
 img.slides {
   vertical-align: middle;
-  border-radius: 50%;
   height: 400px;
   width: 400px;
   max-width: 400px;
@@ -615,12 +620,11 @@ img.slides {
   width: auto;
   padding: 1em;
   margin-top: -1.5em;
-  /* color: white; */
-  color: grey;
   font-weight: bold;
   font-size: 120%;
   transition: 0.6s ease;
   user-select: none;
+  text-decoration: none;
 }
 
 .prev {
@@ -687,12 +691,12 @@ footer,
 }
 
 footer {
-  background: #ff4486;
+  background: #252330;
   color: white;
 }
 
 footer a {
-  color: #dfece9;
+  color: #aab8b5;
 }
 
 .fab,
