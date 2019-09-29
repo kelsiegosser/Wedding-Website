@@ -205,10 +205,18 @@ nav ul a:hover, nav ul a li:hover {
   width: 0;
 }
 
+iframe {
+  align-self: center;
+}
+
 /*laptops*/
 @media only screen and (min-width: 414px) and (max-width: 1280px) {
   body {
     font-size: 90%;
+  }
+
+  h1.header-background {
+    font-size: 900%;
   }
 
   nav {
@@ -365,6 +373,11 @@ nav ul a:hover, nav ul a li:hover {
 
   blockquote {
     margin: 0;
+  }
+
+  iframe {
+    align-self: center;
+    max-width: 100vw;
   }
 
   footer, .footer-credit {
@@ -697,7 +710,7 @@ img.slides {
 
 footer,
 .footer-credit {
-  background: #eff5f4;
+  background: white; /* #eff5f4 */
   padding: 2em;
   margin-left: 250px;
   text-align: center;
