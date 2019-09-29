@@ -165,18 +165,16 @@ nav {
   background: #ff2171;
   display: flex;
   flex-flow: column nowrap;
-  font-family: 'Unica One', cursive, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 120%;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 nav ul {
-  padding: 1.5em 0 0 0;
-  margin: 0;
+  padding: 1em 0 0 0;
+  margin: .5em;
 }
 
-nav ul li {
-  padding: 0;
+nav ul a {
+  text-decoration: none;
 }
 
 nav ul a li {
@@ -184,10 +182,21 @@ nav ul a li {
   padding: .5em 1em;
   margin: .2em 0;
   text-decoration: none;
+  font-size: 80%;
 }
 
-nav ul li a:hover {
-  color: #d8004f;
+nav ul a:hover, nav ul a li:hover {
+  background: #FF4486;
+  color: white;
+  border-radius: 4px;
+}
+
+
+.active-nav li {
+  background: white;
+  color: #ff2171; 
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .hamburger-icon-container {
@@ -211,7 +220,7 @@ nav ul li a:hover {
   }
 
   .nav-image {
-    max-height: 100px !important;
+    max-width: 200px !important;
     align-self: flex-start !important;
   }
 
@@ -259,9 +268,10 @@ nav ul li a:hover {
     margin: 0 !important;
     padding: 1em !important;
     width: auto !important;
-    font-size: 125% !important;
+    font-size: 110% !important;
     align-self: auto !important;
     padding-top: 8vh !important;
+    text-overflow: ellipsis;
   }
 
   #navBar {
@@ -297,17 +307,17 @@ nav ul li a:hover {
     border-radius: 2px;
     content: '';
     display: block;
-    height: 4px;
+    height: 3px;
     margin: 8px 0;
     transition: all 0.2s ease-in-out;
   }
 
   .hamburger-x:before {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(11px) rotate(135deg);
   }
 
   .hamburger-x:after {
-    transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-11px) rotate(-135deg);
   }
 
   .hamburger-x div {
@@ -315,7 +325,7 @@ nav ul li a:hover {
   }
 
   nav ul {
-    margin-top: 6vh;
+    margin-top: 7vh;
   }
 
   header {
@@ -360,12 +370,6 @@ nav ul li a:hover {
   footer, .footer-credit {
     margin: 0 !important;
   }
-}
-
-.active-nav {
-  color: #ff2171;
-  font-size: larger;
-  line-height: 32px;
 }
 
 .header-image {
@@ -575,7 +579,7 @@ img.wedding-party {
 /************/
 
 .nav-image {
-  max-height: 200px;
+  max-width: 250px;
   object-fit: contain;
   align-self: center;
 }
@@ -605,7 +609,6 @@ div img.heading-garland {
 
 img.slides {
   vertical-align: middle;
-  border-radius: 50%;
   height: 400px;
   width: 400px;
   max-width: 400px;
@@ -619,7 +622,6 @@ img.slides {
   height: auto;
   position: relative;
   margin: auto;
-  padding: 0 2em;
 }
 
 /* Next & previous buttons */
@@ -629,14 +631,13 @@ img.slides {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 1em;
+  padding: .5em;
   margin-top: -1.5em;
-  /* color: white; */
-  color: grey;
   font-weight: bold;
   font-size: 120%;
   transition: 0.6s ease;
   user-select: none;
+  text-decoration: none;
 }
 
 .prev {
@@ -703,12 +704,12 @@ footer,
 }
 
 footer {
-  background: #ff4486;
+  background: #252330;
   color: white;
 }
 
 footer a {
-  color: #dfece9;
+  color: #aab8b5;
 }
 
 .fab,
