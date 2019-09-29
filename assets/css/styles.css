@@ -353,7 +353,7 @@ iframe {
   .column {
     flex: 0 1 auto !important;
     width: 100%;
-    margin: 1em 0 !important;
+    margin: 1em .5em !important;
   }
 
   .column.no-padding {
@@ -378,6 +378,12 @@ iframe {
   iframe {
     align-self: center;
     max-width: 100vw;
+  }
+
+  .large-text {
+    font-size: 200% !important;
+    padding: .5em 0 0 0 !important;
+    margin: 0 .1em !important;
   }
 
   footer, .footer-credit {
