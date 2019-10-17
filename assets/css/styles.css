@@ -326,6 +326,7 @@ iframe {
 
   nav ul a li {
     font-size: 85%;
+    padding: .75em 1em;
   }
 
   .hamburger-icon-container {
