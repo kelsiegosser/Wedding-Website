@@ -33,6 +33,12 @@ function openCloseNav() {
   }
 }
 
+// close hamburger menu after click a
+$( 'nav ul a' ).on('click', function() {
+  $('#hamburger-icon').click();
+});
+
+
 
 /************/
 /* Carousel */
