@@ -2,6 +2,7 @@
 font-family: 'Unica One', cursive; // Headers - small caps
 font-family: 'Great Vibes', cursive; // Heading
 font-family: 'Nunito Sans', sans-serif; // Text - caps
+font-family: 'Kristi', cursive; // background headers
 */
 
 /* 
@@ -82,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Unica One', cursive, Arial, sans-serif;
+  font-family: 'Unica One', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
   text-align: center;
@@ -168,9 +169,18 @@ nav {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.nav-header {
+  text-align: center;
+  color: white;
+  font-family: Kristi, cursive;
+  font-size: 200%;
+  margin: 0;
+}
+
 nav ul {
   padding: 1em 0 0 0;
   margin: .5em;
+  flex-grow: 1;
 }
 
 nav ul a {
@@ -189,6 +199,17 @@ nav ul a:hover, nav ul a li:hover {
   background: #FF4486;
   color: white;
   border-radius: 4px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
+}
+
+.nav-footer {
+  padding: 1em;
+  color: white;
+}
+
+.nav-footer p {
+  font-family: 'Unica One', Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 
@@ -282,6 +303,12 @@ iframe {
     text-overflow: ellipsis;
   }
 
+  nav {
+    overflow: hidden;
+    height: 0;
+    width: 0;
+  }
+
   #navBar {
     overflow: hidden;
     height: 8vh;
@@ -289,11 +316,17 @@ iframe {
     position: fixed;
     top: 0;
     z-index: 3;
+    background: #ff2171;
   }
 
   .nav-image {
     height: 0 !important;
     width: 0 !important;
+  }
+
+  nav ul a li {
+    font-size: 85%;
+    padding: .75em 1em;
   }
 
   .hamburger-icon-container {
