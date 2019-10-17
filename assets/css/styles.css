@@ -83,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Unica One', cursive, Arial, sans-serif;
+  font-family: 'Unica One', Arial, sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
   text-align: center;
@@ -208,7 +208,7 @@ nav ul a:hover, nav ul a li:hover {
 }
 
 .nav-footer p {
-  font-family: 'Unica One', cursive, Arial, sans-serif;
+  font-family: 'Unica One', Arial, sans-serif;
   text-transform: uppercase;
 }
 
