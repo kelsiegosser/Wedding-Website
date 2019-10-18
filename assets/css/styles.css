@@ -305,8 +305,8 @@ iframe {
 
   nav {
     overflow: hidden;
-    height: 0;
-    width: 0;
+    height: 8vh;
+    width: 100%;
   }
 
   #navBar {
