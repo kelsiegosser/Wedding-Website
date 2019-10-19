@@ -20,6 +20,23 @@ $(window).on('scroll', function() {
   });
 });
 
+/* phones */
+$('#navBar ul a').on('click', function(event) {
+  $(this)
+    .removeClass('active-nav');
+  $(this).addClass('active-nav');
+});
+
+$(window).on('scroll', function() {
+  $('.section').each(function() {
+    if ($(window).scrollTop() + offset >= $(this).offset().top) {
+      var id = $(this).attr('id');
+      $('#navBar ul a').removeClass('active-nav');
+      $('#navBar ul a[href=\\#' + id + ']').addClass('active-nav');
+    }
+  });
+});
+
 
 let navBar = document.getElementById('navBar');
 let hamburger = document.getElementById('hamburger-icon');
@@ -33,9 +50,10 @@ function openCloseNav() {
   }
 }
 
-// close hamburger menu after click a
-$( 'nav ul a' ).on('click', function() {
-  $('#hamburger-icon').click();
+$(document).ready(function () {
+  $('#navBar ul a').click(function(event) {
+    openCloseNav();
+  });
 });
 
 
