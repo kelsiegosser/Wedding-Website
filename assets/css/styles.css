@@ -202,6 +202,13 @@ nav ul a:hover, nav ul a li:hover {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
 }
 
+.active-nav li {
+  background: white;
+  color: #ff2171; 
+  border-radius: 4px;
+  text-decoration: none;
+}
+
 .nav-footer {
   padding: 1em;
   color: white;
@@ -212,12 +219,10 @@ nav ul a:hover, nav ul a li:hover {
   text-transform: uppercase;
 }
 
-
-.active-nav li {
-  background: white;
-  color: #ff2171; 
-  border-radius: 4px;
-  text-decoration: none;
+#navBar {
+  overflow: hidden;
+  height: 0;
+  width: 0;
 }
 
 .hamburger-icon-container {
