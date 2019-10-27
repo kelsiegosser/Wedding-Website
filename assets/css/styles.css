@@ -275,6 +275,7 @@ iframe {
   img.slides {
     height: 200px !important;
     width: 200px !important;
+    margin: 2px !important;
   }
 
   img.wedding-party {
@@ -426,8 +427,9 @@ iframe {
   }
 
   img.slides {
-    height: 200px !important;
-    width: 200px !important;
+    height: 100px !important;
+    width: 100px !important;
+    margin: 2px !important;
   }
 
   blockquote {
@@ -478,22 +480,22 @@ iframe {
 }
 
 .orange-background {
-  background: #ffa14d;
+  background: linear-gradient(#ffa14d, #ff9233);
   color: #eff5f4;
 }
 
 .red-background {
-  background: #ff6d65;
+  background: linear-gradient(#ff6d65, #ff554d);
   color: #eff5f4;
 }
 
 .pink-background {
-  background: #ff4486;
+  background: linear-gradient(#ff4486, #ff1a6a);
   color: #eff5f4;
 }
 
 .purple-background {
-  background: #dd2594;
+  background: linear-gradient(#dd2594, #c71f84);
   color: #eff5f4;
 }
 
@@ -675,102 +677,14 @@ div img.heading-garland {
   z-index: 1;
 }
 
-/************/
-/* Carousel */
-/************/
-
-.mySlides {
-  overflow: hidden;
-  height: auto;
-  width: auto;
-}
 
 img.slides {
   vertical-align: middle;
-  height: 400px;
-  width: 400px;
-  max-width: 400px;
-  max-height: 400px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  width: auto;
-  height: auto;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: .5em;
-  margin-top: -1.5em;
-  font-weight: bold;
-  font-size: 120%;
-  transition: 0.6s ease;
-  user-select: none;
-  text-decoration: none;
-}
-
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 0 3px 3px 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 0.75em;
-  width: 0.75em;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: rgb(255, 33, 113);
-  transition: color 0.5s ease;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  margin: 4px;
+  border-radius: 2px;
 }
 
 footer,
