@@ -235,6 +235,21 @@ iframe {
   align-self: center;
 }
 
+.timeline-border {
+  padding: .25em;
+  margin: 1em;
+  border-radius: 4px;
+  background: linear-gradient(45deg, rgb(255,138,33), rgb(255,73,62), rgb(255,33,113), rgb(221,37,148));
+  align-self: center;
+  min-width: 700px;
+}
+
+.timeline-background {
+  background: white;
+  padding: 1em;
+  border-radius: 2px;
+}
+
 .column.timeline {
   margin: 0 !important;
 }
