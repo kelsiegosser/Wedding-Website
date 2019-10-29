@@ -5,8 +5,7 @@
 const offset = 15;
 
 $('nav ul a').on('click', function(event) {
-  $(this)
-    .removeClass('active-nav');
+  $(this).removeClass('active-nav');
   $(this).addClass('active-nav');
 });
 
@@ -22,8 +21,7 @@ $(window).on('scroll', function() {
 
 /* phones */
 $('#navBar ul a').on('click', function(event) {
-  $(this)
-    .removeClass('active-nav');
+  $(this).removeClass('active-nav');
   $(this).addClass('active-nav');
 });
 
@@ -37,20 +35,19 @@ $(window).on('scroll', function() {
   });
 });
 
-
 let navBar = document.getElementById('navBar');
 let hamburger = document.getElementById('hamburger-icon');
 function openCloseNav() {
   if (navBar.style.height === '100vh') {
     navBar.style.height = '8vh';
-    hamburger.classList.remove("hamburger-x");
+    hamburger.classList.remove('hamburger-x');
   } else {
     navBar.style.height = '100vh';
-    hamburger.classList.add("hamburger-x");
+    hamburger.classList.add('hamburger-x');
   }
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#navBar ul a').click(function(event) {
     openCloseNav();
   });
