@@ -5,8 +5,7 @@
 const offset = 15;
 
 $('nav ul a').on('click', function(event) {
-  $(this)
-    .removeClass('active-nav');
+  $(this).removeClass('active-nav');
   $(this).addClass('active-nav');
 });
 
@@ -22,8 +21,7 @@ $(window).on('scroll', function() {
 
 /* phones */
 $('#navBar ul a').on('click', function(event) {
-  $(this)
-    .removeClass('active-nav');
+  $(this).removeClass('active-nav');
   $(this).addClass('active-nav');
 });
 
@@ -37,22 +35,35 @@ $(window).on('scroll', function() {
   });
 });
 
-
 let navBar = document.getElementById('navBar');
 let hamburger = document.getElementById('hamburger-icon');
 function openCloseNav() {
   if (navBar.style.height === '100vh') {
     navBar.style.height = '8vh';
-    hamburger.classList.remove("hamburger-x");
+    hamburger.classList.remove('hamburger-x');
   } else {
     navBar.style.height = '100vh';
-    hamburger.classList.add("hamburger-x");
+    hamburger.classList.add('hamburger-x');
   }
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#navBar ul a').click(function(event) {
     openCloseNav();
+  });
+});
+
+/*************/
+/* Itinerary */
+/*************/
+
+$(document).ready(function(){
+  $('a.toggle').click(function(){
+    $(this).find('span').text(function(i, text) {
+      return text === 'Close Details' ? 'View Details' : 'Close Details';
+    });
+    $(this).find('i').toggleClass('fa-chevron-down fa-chevron-up')
+    $('div .toggle-content').slideToggle();
   });
 });
 
@@ -62,7 +73,7 @@ $(document).ready(function () {
 /*************/
 
 // Set the date we're counting down to
-var countDownDate = new Date('May 9, 2020 11:00:00').getTime();
+var countDownDate = new Date('May 9, 2020 10:30:00').getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
