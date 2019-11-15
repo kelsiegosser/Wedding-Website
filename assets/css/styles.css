@@ -282,19 +282,24 @@ iframe {
   height: 9px;
   width: 9px;
   border-radius: 50%;
-  background-color: #aab8b5;
+  background-color: #a9d1ca;
   margin-top: 1.25em;
 }
 
 .timeline-left {
   align-items: flex-end !important;
-  text-align: right;
   flex-grow: 6 !important;
+}
+
+.column.timeline.timeline-left h2,
+.column.timeline.timeline-left h3, 
+.column.timeline.timeline-left p {
+  text-align: right;
 }
 
 .timeline-center {
   flex-grow: 0 !important;
-  background: linear-gradient(#aab8b5, #aab8b5) no-repeat center/1px 100%;
+  background: linear-gradient(#c0d8d4, #c0d8d4) no-repeat center/1px 100%;
 }
 
 .timeline-right {
@@ -303,9 +308,14 @@ iframe {
   flex-grow: 6 !important;
 }
 
+.vertical-line {
+  border-right: 2px dashed #c0d8d4;
+  height: 50px;
+  width: 0px;
+}
 
 /*laptops*/
-@media only screen and (min-width: 414px) and (max-width: 1280px) {
+@media only screen and (min-width: 414px) and (max-width: 1440px) {
   body {
     font-size: 90%;
   }
@@ -485,7 +495,7 @@ iframe {
     margin: 1em .5em !important;
   }
 
-  #itinerary .column {
+  .timeline-border .column {
     display: flex;
     flex-flow: column nowrap;
     flex-basis: 100% !important;
@@ -503,6 +513,26 @@ iframe {
     max-width: 50%;
     height: auto !important;
     object-fit: contain !important;
+  }
+
+  .timeline-border {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .timeline-center {
+    max-width: 5px !important;
+    padding: 0 !important;
+  }
+
+  .timeline-background {
+    padding: 1em 0 !important;
+  }
+
+  .column.timeline {
+    font-size: 80%;
+    overflow-wrap: normal;
+    width: 33%;
   }
 
   img.slides {
