@@ -828,7 +828,7 @@ footer a {
 
 .fab,
 .fas {
-  padding: 0.5em;
+  padding: .25em .5em .25em .25em;
 }
 
 footer a:hover {
